@@ -1,1 +1,48 @@
-1. 
+Date for git tutorials	:10/14/2022
+Date for Github account	:arround Fall 2021
+
+
+1. 	$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 615 bytes | 615.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Byronn04/assignment2.git
+   f4975e5..84150eb  master -> master
+   
+2. 	7 commits have been done to the repository
+	the command: git rev-list --all --count
+
+3. 	the last time README.md was moddifed was at 20:38.
+	ll to show the last update to the read
+	
+4. 	branches are used to represent an independent development of the project. They are a reflection of the state of the remote repository and can be used to difericiate betweeen your local work and the remote repository.
+	they work with a detached head mode where you work on a "copy" and the update the branch. 
+	
+5. 	git log shows the commited history, while git status inspects the working directory and staged snapshots, thus git log is limmtied to only the commited history.
+
+6. 	git log --diff-filter=A -- Vehicle.h
+	
+7. 	git log --grep="file"
+
+8. 	Inheritance defines a class that inherits all the methods and attributes from another class. It is referenced as a child class and the parent being the class the which the atributes where inherited from.
+   
+	Polymorphism allows the access to objects of diferent types via the same interface. ie a method with the same name in two different classes can be used for diffent implementations.  
+   
+	Encapsulation restricts the access to methods and atrributes in a given class. This is to preven the access or modification of data accidently.
+
+9.  In a dictator and lieutenants workflow there is one central repository which all developer pull from but only the dictator can push to it.
+	The dictator merges all changes comming from the lieutenants' repositories and solves conflics among the lieutenants repositories. 
+	Lieutenants merge chages from their assigned deveopers and solve conflics among its assinged developers' changes
+	Developers push their changes to thier assigned lieutenant.
+	
+	In an integratrion manager Workflow there is one central repository and and each developer has two repositores a public and a private one. 
+	Developeres pull from the central repository but they first push changes from their private repositry to thier public.
+	The integration manager pulls from each developers' public repository and solves any conflict among their changes, finally he pushes those changes to the central repository.
+
+10.	In a centralized workflow each developr pulls from the central repository and must solve any conflict befor pushing to the central repository.
+	In a group of a 100 developeres this could cause caos as one could be solving a conflict before pushing and another push comes from a colleague that conflics with his commit thus having to solve that conflics without being able to push his changes.
+	In a dictator and Lieutenant workflow changes are more orderly as the lieutenant would be solving the commits of its assinged developers while the dictator solves the pushes of the lieutenant and developer can commit changes without having to pause their development to solve issues. 
